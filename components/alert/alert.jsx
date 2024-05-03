@@ -28,8 +28,8 @@ const AlertConf = ({ className, variant, output }) => {
 
       window.addEventListener("message", ({ data }) => {
         try {
-            event.source.postMessage(twMerge(clsx(alertVariants(data))), "*");
-          } catch (e) {}
+          event.source.postMessage(twMerge(clsx(alertVariants(data))), "*");
+        } catch (e) {}
       }, false);
     </script>
   `;
