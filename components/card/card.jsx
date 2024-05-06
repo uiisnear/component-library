@@ -18,7 +18,7 @@ const CardHeader = ({ className, children, ...props }) => (
   </div>
 );
 
-const cardTitleClassname = "font-semibold leading-none tracking-tight";
+const cardTitleClassname = "text-2xl font-semibold leading-none tracking-tight";
 
 const CardTitle = ({ className, children, ...props }) => (
   <h3 ref="forwardedRef" className={className ?? cardTitleClassname} {...props}>
