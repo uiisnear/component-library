@@ -1,14 +1,10 @@
 const { Tailwind } = VM.require("uiisnear.near/widget/tailwind");
 const { Button, ButtonConf } = VM.require("uiisnear.near/widget/button");
-const { CollapsibleRoot, CollapsibleTrigger, CollapsibleContent } = VM.require(
+const { Collapsible, CollapsibleTrigger, CollapsibleContent } = VM.require(
   "uiisnear.near/widget/collapsible"
 );
 
 const [buttonToggle, setButtonToggle] = useState("");
-const [buttonDestructive, setButtonDestructive] = useState("");
-const [buttonSecondary, setButtonSecondary] = useState("");
-const [buttonGhost, setButtonGhost] = useState("");
-const [buttonLink, setButtonLink] = useState("");
 
 if (Tailwind == undefined) return "";
 if (ButtonConf == undefined) return "";
@@ -19,7 +15,7 @@ if (buttonToggle === "")
 return (
   <Tailwind>
     <div className="flex mx-auto w-max pt-10">
-      <CollapsibleRoot
+      <Collapsible
         open={isOpen}
         onOpenChange={setIsOpen}
         className="w-[350px] space-y-2"
@@ -46,7 +42,7 @@ return (
             @stitches/react
           </div>
         </CollapsibleContent>
-      </CollapsibleRoot>
+      </Collapsible>
     </div>
   </Tailwind>
 );
