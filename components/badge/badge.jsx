@@ -19,7 +19,7 @@ const BadgeConf = ({ className, variant, output }) => {
               default:
                 "${variantDefault}",
               secondary:
-                "border-transparent bg-secondary text-secondary-foreground hover:opacity-80",
+                "border-transparent bg-uin-secondary text-secondary-foreground hover:opacity-80",
               destructive:
                 "border-transparent bg-destructive text-destructive-foreground shadow hover:opacity-80",
               outline: "text-foreground",
