@@ -2,7 +2,7 @@ const { Tailwind } = VM.require("uiisnear.near/widget/tailwind");
 
 const { AspectRatio } = VM.require("uiisnear.near/widget/aspectRatio");
 
-if (Tailwind === undefined) return <></>;
+if (Tailwind == undefined) return "";
 
 return (
   <Tailwind>

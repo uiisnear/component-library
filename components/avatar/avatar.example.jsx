@@ -4,7 +4,7 @@ const { Avatar, AvatarImage, AvatarFallback } = VM.require(
   "uiisnear.near/widget/avatar"
 );
 
-if (Tailwind === undefined) return <></>;
+if (Tailwind == undefined) return "";
 
 return (
   <Tailwind>

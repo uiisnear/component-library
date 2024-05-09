@@ -2,7 +2,7 @@ const { Tailwind } = VM.require("uiisnear.near/widget/tailwind");
 
 const { Input } = VM.require("uiisnear.near/widget/input");
 
-if (Tailwind === undefined) return <></>;
+if (Tailwind == undefined) return "";
 
 return (
   <Tailwind>
