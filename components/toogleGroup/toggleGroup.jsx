@@ -1,9 +1,9 @@
-const toggleGroupRootClassname = "flex items-center justify-center gap-1";
+const toggleGroupClassname = "flex items-center justify-center gap-1";
 
 const ToggleGroupRoot = ({ className, variant, size, children, ...props }) => (
   <ToggleGroup.Root
     ref="forwardedRef"
-    className={className ?? toggleGroupRootClassname}
+    className={className ?? toggleGroupClassname}
     {...props}
   >
     {children}
@@ -18,4 +18,4 @@ const ToggleGroupItem = ({ className, children, ...props }) => {
   );
 };
 
-return { ToggleGroup: ToggleGroupRoot, ToggleGroupItem };
+return { ToggleGroup: ToggleGroupRoot, ToggleGroupItem, toggleGroupClassname };

@@ -1,4 +1,4 @@
-const sliderRootClassname =
+const sliderClassname =
   "relative flex w-full touch-none select-none items-center justify-center w-1.5";
 
 const SliderRoot = ({ className, orientation, ...props }) => {
@@ -7,7 +7,7 @@ const SliderRoot = ({ className, orientation, ...props }) => {
   return (
     <Slider.Root
       ref="forwardedRef"
-      className={className ?? sliderRootClassname}
+      className={className ?? sliderClassname}
       orientation={orientation}
       {...props}
     >
@@ -27,4 +27,4 @@ const SliderRoot = ({ className, orientation, ...props }) => {
   );
 };
 
-return { Slider: SliderRoot, sliderRootClassname };
+return { Slider: SliderRoot, sliderClassname };

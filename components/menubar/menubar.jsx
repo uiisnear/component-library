@@ -14,13 +14,13 @@ const MenubarRadioGroup = ({ children, ...props }) => (
   <Menubar.RadioGroup {...props}>{children}</Menubar.RadioGroup>
 );
 
-const menubarRootClassname =
+const menubarClassname =
   "flex h-9 items-center space-x-1 rounded-md border bg-background p-1 shadow-sm";
 
 const MenubarRoot = ({ className, children, ...props }) => (
   <Menubar.Root
     ref="forwardedRef"
-    className={className ?? menubarRootClassname}
+    className={className ?? menubarClassname}
     {...props}
   >
     {children}
@@ -195,7 +195,7 @@ return {
   MenubarGroup,
   MenubarSub,
   MenubarShortcut,
-  menubarRootClassname,
+  menubarClassname,
   menubarTriggerClassname,
   menubarSubTriggerClassname,
   menubarSubContentClassname,
